@@ -10,6 +10,7 @@
 #import <GoogleOpenSource/GoogleOpenSource.h>
 
 
+
 static NSString * const kClientId = @"874430053766-f6vg1hnc0n8ask20matt9e4l66fu59n1.apps.googleusercontent.com";
 
 @interface ViewController ()
@@ -46,7 +47,6 @@ static NSString * const kClientId = @"874430053766-f6vg1hnc0n8ask20matt9e4l66fu5
     */
     
     GIDSignIn *signIn = [GIDSignIn sharedInstance];
-    
     [signIn signOut];
     signIn.shouldFetchBasicProfile = YES;
     signIn.delegate = self;
@@ -72,7 +72,7 @@ static NSString * const kClientId = @"874430053766-f6vg1hnc0n8ask20matt9e4l66fu5
     
     if (error == nil)
     {
-        [self.loginButton setTitle:[NSString stringWithFormat:@"Signed in as:%@", user.profile.name] forState:UIControlStateNormal];
+        [self.loginButton setTitle:[NSString stringWithFormat:@"Signed in as : %@", user.profile.name] forState:UIControlStateNormal];
         
     }
     else
