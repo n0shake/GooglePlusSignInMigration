@@ -2,6 +2,8 @@
 
 Migration to latest Google Sign In:
 
+![Sample Animations](https://github.com/Abhishaker17/GooglePlusSignInMigration/blob/master/Images/SampleImage.jpeg)
+
 More details here: [Google Plus Sign In Issue 900](https://code.google.com/p/google-plus-platform/issues/detail?id=900 "Google Plus Sign In Issue")
 
 Steps to migrate:
