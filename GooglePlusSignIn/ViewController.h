@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <GooglePlus/GooglePlus.h>
+#import <GoogleSignIn/GoogleSignIn.h>
 
-@interface ViewController : UIViewController <GPPSignInDelegate>
+@interface ViewController : UIViewController <GPPSignInDelegate, GIDSignInDelegate, GIDSignInUIDelegate>
 
 
 @end

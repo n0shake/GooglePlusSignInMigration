@@ -23,6 +23,8 @@
 		46054E911B2FEF200048CB3F /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46054E8E1B2FEF200048CB3F /* GoogleOpenSource.framework */; };
 		46054E921B2FEF200048CB3F /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46054E8F1B2FEF200048CB3F /* GooglePlus.bundle */; };
 		46054E931B2FEF200048CB3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46054E901B2FEF200048CB3F /* GooglePlus.framework */; };
+		4631CE3C1B2FF3CB009929E9 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4631CE3A1B2FF3CA009929E9 /* GoogleSignIn.bundle */; };
+		4631CE3D1B2FF3CB009929E9 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631CE3B1B2FF3CA009929E9 /* GoogleSignIn.framework */; };
 		46B1BF711B2E9D0000FE73F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BF701B2E9D0000FE73F8 /* main.m */; };
 		46B1BF741B2E9D0000FE73F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BF731B2E9D0000FE73F8 /* AppDelegate.m */; };
 		46B1BF771B2E9D0000FE73F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BF761B2E9D0000FE73F8 /* ViewController.m */; };
@@ -30,8 +32,6 @@
 		46B1BF7C1B2E9D0000FE73F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B1BF7B1B2E9D0000FE73F8 /* Images.xcassets */; };
 		46B1BF7F1B2E9D0000FE73F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B1BF7D1B2E9D0000FE73F8 /* LaunchScreen.xib */; };
 		46B1BF8B1B2E9D0000FE73F8 /* GooglePlusSignInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BF8A1B2E9D0000FE73F8 /* GooglePlusSignInTests.m */; };
-		46B1BF961B2E9DDD00FE73F8 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46B1BF941B2E9DDD00FE73F8 /* GoogleSignIn.bundle */; };
-		46B1BF971B2E9DDD00FE73F8 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B1BF951B2E9DDD00FE73F8 /* GoogleSignIn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46054E6D1B2FE7930048CB3F /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = "../../../Documents/SDKs/google-plus-ios-sdk-1.7.1/GoogleOpenSource.framework"; sourceTree = "<group>"; };
-		46054E6E1B2FE7930048CB3F /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../../../Documents/SDKs/google-plus-ios-sdk-1.7.1/GooglePlus.bundle"; sourceTree = "<group>"; };
-		46054E6F1B2FE7930048CB3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = "../../../Documents/SDKs/google-plus-ios-sdk-1.7.1/GooglePlus.framework"; sourceTree = "<group>"; };
 		46054E731B2FEB3E0048CB3F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		46054E751B2FEB4B0048CB3F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		46054E771B2FEB5A0048CB3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -64,6 +61,8 @@
 		46054E8E1B2FEF200048CB3F /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = "google-plus-ios-sdk-1.7.1/GoogleOpenSource.framework"; sourceTree = "<group>"; };
 		46054E8F1B2FEF200048CB3F /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "google-plus-ios-sdk-1.7.1/GooglePlus.bundle"; sourceTree = "<group>"; };
 		46054E901B2FEF200048CB3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = "google-plus-ios-sdk-1.7.1/GooglePlus.framework"; sourceTree = "<group>"; };
+		4631CE3A1B2FF3CA009929E9 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = google_signin_sdk_2_0_1/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		4631CE3B1B2FF3CA009929E9 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = google_signin_sdk_2_0_1/GoogleSignIn.framework; sourceTree = "<group>"; };
 		46B1BF6B1B2E9D0000FE73F8 /* GooglePlusSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlusSignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B1BF6F1B2E9D0000FE73F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B1BF701B2E9D0000FE73F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,8 +76,6 @@
 		46B1BF841B2E9D0000FE73F8 /* GooglePlusSignInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooglePlusSignInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B1BF891B2E9D0000FE73F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B1BF8A1B2E9D0000FE73F8 /* GooglePlusSignInTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooglePlusSignInTests.m; sourceTree = "<group>"; };
-		46B1BF941B2E9DDD00FE73F8 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = google_signin_sdk_2_0_1/GoogleSignIn.bundle; sourceTree = "<group>"; };
-		46B1BF951B2E9DDD00FE73F8 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = google_signin_sdk_2_0_1/GoogleSignIn.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +90,7 @@
 				46054E861B2FEB9C0048CB3F /* CoreGraphics.framework in Frameworks */,
 				46054E841B2FEB930048CB3F /* AddressBook.framework in Frameworks */,
 				46054E821B2FEB870048CB3F /* CoreText.framework in Frameworks */,
+				4631CE3D1B2FF3CB009929E9 /* GoogleSignIn.framework in Frameworks */,
 				46054E801B2FEB7C0048CB3F /* UIKit.framework in Frameworks */,
 				46054E7E1B2FEB760048CB3F /* Security.framework in Frameworks */,
 				46054E7C1B2FEB6D0048CB3F /* Foundation.framework in Frameworks */,
@@ -101,7 +99,6 @@
 				46054E781B2FEB5A0048CB3F /* QuartzCore.framework in Frameworks */,
 				46054E761B2FEB4B0048CB3F /* CoreMotion.framework in Frameworks */,
 				46054E741B2FEB3E0048CB3F /* AssetsLibrary.framework in Frameworks */,
-				46B1BF971B2E9DDD00FE73F8 /* GoogleSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +115,8 @@
 		46054E8D1B2FEE490048CB3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4631CE3A1B2FF3CA009929E9 /* GoogleSignIn.bundle */,
+				4631CE3B1B2FF3CA009929E9 /* GoogleSignIn.framework */,
 				46054E8E1B2FEF200048CB3F /* GoogleOpenSource.framework */,
 				46054E8F1B2FEF200048CB3F /* GooglePlus.bundle */,
 				46054E901B2FEF200048CB3F /* GooglePlus.framework */,
@@ -134,11 +133,6 @@
 				46054E771B2FEB5A0048CB3F /* QuartzCore.framework */,
 				46054E751B2FEB4B0048CB3F /* CoreMotion.framework */,
 				46054E731B2FEB3E0048CB3F /* AssetsLibrary.framework */,
-				46054E6D1B2FE7930048CB3F /* GoogleOpenSource.framework */,
-				46054E6E1B2FE7930048CB3F /* GooglePlus.bundle */,
-				46054E6F1B2FE7930048CB3F /* GooglePlus.framework */,
-				46B1BF941B2E9DDD00FE73F8 /* GoogleSignIn.bundle */,
-				46B1BF951B2E9DDD00FE73F8 /* GoogleSignIn.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,8 +277,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B1BF961B2E9DDD00FE73F8 /* GoogleSignIn.bundle in Resources */,
 				46054E921B2FEF200048CB3F /* GooglePlus.bundle in Resources */,
+				4631CE3C1B2FF3CB009929E9 /* GoogleSignIn.bundle in Resources */,
 				46B1BF7A1B2E9D0000FE73F8 /* Main.storyboard in Resources */,
 				46B1BF7F1B2E9D0000FE73F8 /* LaunchScreen.xib in Resources */,
 				46B1BF7C1B2E9D0000FE73F8 /* Images.xcassets in Resources */,

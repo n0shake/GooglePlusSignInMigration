@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <GoogleOpenSource/GoogleOpenSource.h>
 
+
 static NSString * const kClientId = @"874430053766-f6vg1hnc0n8ask20matt9e4l66fu59n1.apps.googleusercontent.com";
 
 @interface ViewController ()
@@ -32,6 +33,7 @@ static NSString * const kClientId = @"874430053766-f6vg1hnc0n8ask20matt9e4l66fu5
 
 - (IBAction)login:(id)sender
 {
+    /*
     GPPSignIn *signIn = [GPPSignIn sharedInstance];
     signIn.shouldFetchGooglePlusUser = YES;
     signIn.shouldFetchGoogleUserEmail = YES;
@@ -41,10 +43,54 @@ static NSString * const kClientId = @"874430053766-f6vg1hnc0n8ask20matt9e4l66fu5
     [signIn signOut];
     
     [signIn authenticate];
+    */
+    
+    GIDSignIn *signIn = [GIDSignIn sharedInstance];
+    
+    [signIn signOut];
+    signIn.shouldFetchBasicProfile = YES;
+    signIn.delegate = self;
+    signIn.uiDelegate = self;
+    [signIn setClientID: kClientId];
+    [signIn setScopes:[NSArray arrayWithObject:@"https://www.googleapis.com/auth/plus.login"]];
+    [signIn setDelegate: self];
+    [signIn signIn];
+
     
      [self.loginButton setTitle:@"Getting Information" forState:UIControlStateNormal];
     
 }
+
+-(void)signInWillDispatch:(GIDSignIn *)signIn error:(NSError *)error
+{
+    //Hide your activity indicator
+}
+
+- (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error
+{
+    // Perform any operations on signed in user here.
+    
+    if (error == nil)
+    {
+        [self.loginButton setTitle:[NSString stringWithFormat:@"Signed in as:%@", user.profile.name] forState:UIControlStateNormal];
+        
+    }
+    else
+    {
+        [self.loginButton setTitle:error.localizedDescription forState:UIControlStateNormal];
+        
+        NSLog(@"Error:%@", error);
+    }
+    
+    
+}
+
+- (void)signIn:(GIDSignIn *)signIn didDisconnectWithUser:(GIDGoogleUser *)user withError:(NSError *)error
+{
+    // Perform any operations when the user disconnects from app here.
+    NSLog(@"Unable to sign in:%@", user.profile.name);
+}
+
 
 #pragma mark -
 #pragma mark GPlus Delegate: Not being used as we have upgraded SDK. More here: https://code.google.com/p/google-plus-platform/issues/detail?id=900
