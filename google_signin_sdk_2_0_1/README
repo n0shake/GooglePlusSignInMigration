@@ -1,0 +1,13 @@
+The Google Sign-In SDK allows users to sign in with their Google account from
+third-party apps.  The SDK contains the following files:
+
+README -- This file.
+
+Changelog -- The versions and corresponding changes of the SDK.
+
+GoogleSignIn.framework/ -- The Google Sign-In SDK framework.
+
+GoogleSignIn.bundle/ -- Google Sign-In resources to be included in your app.
+
+Sample/ -- Sample code for your reference only.  Do not include this in your project.
+   SignInSample.xcodeproj/ -- The sample Xcode project.
